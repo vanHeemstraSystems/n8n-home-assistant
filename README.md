@@ -8,3 +8,5 @@ Based on "hass-n8n | Home assistant addon to host a n8n.io instance | Runtime Ev
 Based on "Home assistant addon to host a n8n.io instance" at https://github.com/Rbillon59/hass-n8n
 
 Based on "N8n.io integration" at https://community.home-assistant.io/t/n8n-io-integration/297903
+
+Based on "Rapid Product Development with n8n" at https://github.com/PacktPublishing/Rapid-Product-Development-with-n8n
