@@ -13,6 +13,8 @@ Based on "Rapid Product Development with n8n" at https://github.com/PacktPublish
 
 Based on "Connect Home Assistant to Alexa" at https://voicemonkey.io/integrations/home-assistant
 
+Based on "Definitive Guide to API Integration for Engineers" at https://blog.n8n.io/api-integration/ 
+
 ## 100 - Introduction
 
 See [README.md](./100/README.md)
