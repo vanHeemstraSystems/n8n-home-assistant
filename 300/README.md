@@ -10,7 +10,7 @@ Simply add the following to Home Assistant’s **configuration.yaml** file:
 # N8N Routine API call
 rest_command:
   trigger_n8n:
-    url: https://~~api-v2.voicemonkey.io~~/trigger
+    url: https://~~api-v2.voicemonkey.io~~/trigger  # REPLACE WITH N8N URL
     method: POST
     verify_ssl: true
     content_type:  'application/json; charset=utf-8'
