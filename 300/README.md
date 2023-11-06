@@ -9,7 +9,7 @@ Simply add the following to Home Assistant’s **configuration.yaml** file:
 ```
 # N8N Routine API call
 rest_command:
-trigger_n8n:
+  trigger_n8n:
     url: https://api-v2.voicemonkey.io/trigger
     method: POST
     verify_ssl: true
@@ -22,4 +22,22 @@ trigger_n8n:
 In the code above you should replace API_TOKEN with your own API token found in the N8N console (make sure you keep it secret!). See https://docs.n8n.io/api/authentication/
 
 Even better, keep your tokens in the a ```secrets.yaml``` file to ensure they don’t accidently get leaked by way of a public Github post etc.
+
+## 200 - Testing
+
+Go to developer tools and test it out.
+
+First, restart the server (**Configuration -> Server Controls -> RESTART**) to apply the new changes:
+
+1. Go to Home Assistant’s **Developer Tools -> Services** screen
+2. Select "rest_command.trigger_n8n" from the Service menu
+3. Enter the following in the Service Data field to trigger your n8n trigger device:
+   {"deviceId":"N8N_ID"}
+4. Select the CALL SERVICE button
+
+You must replace N8N_ID with the ID of your N8N trigger device found in the Devices manager section of the console.
+
+And that’s it!
+
+You can now start triggering N8N Routines from Home Assistant.
 
