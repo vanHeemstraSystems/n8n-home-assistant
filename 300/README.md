@@ -4,7 +4,7 @@
 
 In Home Assistant you can make API calls using the REST command.
 
-Simply add the following to Home Assistant’s configuration.yaml file:
+Simply add the following to Home Assistant’s **configuration.yaml** file:
 
 ```
 # N8N Routine API call
