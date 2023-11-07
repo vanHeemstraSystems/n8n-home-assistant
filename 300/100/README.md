@@ -40,6 +40,27 @@ curl -X 'GET' \
 
 For ```<version-number>``` choose ```v.1```.
 
+## 400 - Call the WebHook using your key
+
+If instead of an API, you have configured a WebHook in n8n, send the API key in your WebHook call as a header named ***X-N8N-API-KEY**.
+
+For example, say you want to get all active workflows. Your curl request will look like this:
+
+```
+# For a self-hosted n8n instance
+curl -X 'GET' \
+  '<N8N_HOST>:<N8N_PORT>/<N8N_PATH>/webhook/v<version-number>/workflows?active=true' \
+  -H 'accept: application/json' \
+  -H 'X-N8N-API-KEY: <your-api-key>'
+
+# For n8n Cloud
+curl -X 'GET' \
+  '<your-cloud-instance>/webhook/v<version-number>/workflows?active=true' \
+  -H 'accept: application/json' \
+  -H 'X-N8N-API-KEY: <your-api-key>'
+```
+For a test webhook, use ```webhook-test``` instead of ```webhook```.
+For ```<version-number>``` choose ```v.1```.
 
 MORE ...
 
