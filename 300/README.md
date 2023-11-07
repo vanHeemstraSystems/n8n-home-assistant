@@ -4,6 +4,11 @@
 
 Create a Webhook in N8N that will be triggered when a RESTful command is executed from an (external) application, such as Home Assistant.
 
+Based on "The beginner's guide to webhooks for workflow automation" at https://blog.n8n.io/webhooks-for-workflow-automation/ 
+
+
+
+MORE ...
 
 
 ## 200 - Trigger N8N With The RESTful Command
