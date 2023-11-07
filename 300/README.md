@@ -1,6 +1,12 @@
 # 300 - Building Our Application
 
-## 100 - Trigger N8N With The RESTful Command
+## 100 - Creating a RESTful API in N8N
+
+Create a Webhook in N8N that will be triggered when a RESTful command is executed from an (external) application, such as Home Assistant.
+
+
+
+## 200 - Trigger N8N With The RESTful Command
 
 In Home Assistant you can make API calls using the REST command.
 
@@ -23,7 +29,7 @@ In the code above you should replace API_TOKEN with your own API token found in 
 
 Even better, keep your tokens in the a ```secrets.yaml``` file to ensure they don’t accidently get leaked by way of a public Github post etc.
 
-## 200 - Testing
+## 300 - Testing
 
 Go to developer tools and test it out.
 
