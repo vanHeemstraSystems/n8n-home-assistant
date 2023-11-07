@@ -9,13 +9,13 @@ n8n uses API keys to authenticate API calls.
 ### 100 - Create an API key
 
 1. Log in to n8n ([cloud for wvanheemstra](https://wvanheemstra.app.n8n.cloud)).
-2. Go to **Settings > API**.
+2. Go to **Settings > n8n API**.
 3. Select **Create an API key**.
 
 ### 200 - Delete an API key
 
 1. Log in to n8n ([cloud for wvanheemstra](https://wvanheemstra.app.n8n.cloud)).
-2. Go to **Settings > API**.
+2. Go to **Settings > n8n API**.
 3. Select **Delete** next to the key you want to delete.
 
 ### 300 - Call the API using your key
