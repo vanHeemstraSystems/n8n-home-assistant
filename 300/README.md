@@ -85,7 +85,7 @@ rest_command:
 # End of N8N Routine API call
 ```
 
-In the code above you should replace API_TOKEN with your own API token found in the N8N console (make sure you keep it secret!). See https://docs.n8n.io/api/authentication/
+In the code above you should replace <your-api-key> with your own API token found in the N8N console (make sure you keep it secret!). See https://docs.n8n.io/api/authentication/
 
 Even better, keep your tokens in the a ```secrets.yaml``` file to ensure they don’t accidently get leaked by way of a public Github post etc.
 
