@@ -48,13 +48,13 @@ For example, say you want to the ```activity``` webhook. Your curl request will 
 
 ```
 # For a self-hosted n8n instance
-curl -X 'GET' \
+curl -X 'POST' \
   '<N8N_HOST>:<N8N_PORT>/<N8N_PATH>/webhook/v<version-number>/activities' \
   -H 'accept: application/json' \
   -H 'X-N8N-API-KEY: <your-api-key>'
 
 # For n8n Cloud
-curl -X 'GET' \
+curl -X 'POST' \
   '<your-cloud-instance>/webhook/v<version-number>/activities' \
   -H 'accept: application/json' \
   -H 'X-N8N-API-KEY: <your-api-key>'
