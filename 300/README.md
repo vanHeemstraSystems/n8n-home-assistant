@@ -52,11 +52,32 @@ In Home Assistant you can make API calls using the REST command.
 Simply add the following to Home Assistant’s **configuration.yaml** file:
 
 ```
-# N8N Routine API call
+# Self-hosted N8N Routine API call
 rest_command:
   trigger_n8n:
-    url: https://~~api-v2.voicemonkey.io~~/trigger  # REPLACE WITH N8N URL
+    url: https://<N8N_HOST>:<N8N_PORT>/<N8N_PATH>/api/v<version-number>/workflows?<workflow_id>
     method: POST
+    headers:
+      accept: "application/json"
+      X-N8N-API-KEY: <your-api-key>
+    verify_ssl: true
+    content_type:  'application/json; charset=utf-8'
+    payload: '{"token":"API_TOKEN","device":"{{deviceId}}"}'
+
+# End of N8N Routine API call
+```
+
+OR
+
+```
+# Cloud-hosted N8N Routine API call
+rest_command:
+  trigger_n8n:
+    url: https://<your-cloud-instance>/api/v<version-number>/workflows?<workflow_id>
+    method: POST
+    headers:
+      accept: "application/json"
+      X-N8N-API-KEY: <your-api-key>
     verify_ssl: true
     content_type:  'application/json; charset=utf-8'
     payload: '{"token":"API_TOKEN","device":"{{deviceId}}"}'
