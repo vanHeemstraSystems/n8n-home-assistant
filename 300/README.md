@@ -2,6 +2,8 @@
 
 ## 100 - Creating a RESTful API in N8N
 
+**TIP**: Use your API Key to control n8n programmatically using the n8n API. But if you only want to trigger workflows, consider using the webhook node instead.
+
 Based on "API Authentication" at https://docs.n8n.io/api/authentication/
 
 n8n uses API keys to authenticate API calls.
