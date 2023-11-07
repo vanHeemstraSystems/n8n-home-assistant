@@ -6,6 +6,12 @@ Create a Webhook in N8N that will be triggered when a RESTful command is execute
 
 Based on "The beginner's guide to webhooks for workflow automation" at https://blog.n8n.io/webhooks-for-workflow-automation/ 
 
+n8n provides two nodes for working with webhooks:
+
+1) ***Webhook node*** allows several different services to connect to n8n and run a workflow when data is received. You can use this node when there is no trigger node available for the app you need, or when the trigger node doesn't have the operation you need. 
+
+2) ***Respond to Webhook node*** allows you to control the response to incoming webhooks.
+
 
 
 MORE ...
