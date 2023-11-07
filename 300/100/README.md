@@ -62,5 +62,26 @@ curl -X 'POST' \
 For a test webhook, use ```webhook-test``` instead of ```webhook```.
 For ```<version-number>``` choose ```v.1```.
 
-MORE ...
+You can execute above configuration also in Postman.
 
+In addition, this is how you would send above request in JavaScript:
+
+```
+var requestOptions = {
+  method: 'POST',
+  redirect: 'follow'
+};
+
+fetch("https://wvanheemstra.app.n8n.cloud/webhook-test/v.1/activities", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+The response is:
+
+```
+{
+    "message": "Workflow executed successfully"
+}
+```
