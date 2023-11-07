@@ -62,7 +62,7 @@ rest_command:
       X-N8N-API-KEY: <your-api-key>
     verify_ssl: true
     content_type:  'application/json; charset=utf-8'
-    payload: '{"token":"API_TOKEN","device":"{{deviceId}}"}'
+    payload: '{"foo":"{{bar}}"}'
 
 # End of N8N Routine API call
 ```
@@ -80,7 +80,7 @@ rest_command:
       X-N8N-API-KEY: <your-api-key>
     verify_ssl: true
     content_type:  'application/json; charset=utf-8'
-    payload: '{"token":"API_TOKEN","device":"{{deviceId}}"}'
+    payload: '{"foo":"{{bar}}"}'
 
 # End of N8N Routine API call
 ```
