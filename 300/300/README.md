@@ -10,7 +10,7 @@ First, restart the server (**Configuration -> Server Controls -> RESTART**) to a
    {"bar":"some information"}
 4. Select the CALL SERVICE button
 
-You must replace ```some information``` with the some information you want to make use of in your n8n workflow(s).
+You must replace ```some information``` with some information you want to make use of in your n8n workflow(s).
 
 And that’s it!
 
