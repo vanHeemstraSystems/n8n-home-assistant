@@ -45,6 +45,8 @@ MORE ...
 
 ## 200 - Trigger N8N With The RESTful Command
 
+Based on "rest_command" at https://www.home-assistant.io/integrations/rest_command/
+
 In Home Assistant you can make API calls using the REST command.
 
 Simply add the following to Home Assistant’s **configuration.yaml** file:
