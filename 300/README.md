@@ -97,14 +97,14 @@ First, restart the server (**Configuration -> Server Controls -> RESTART**) to a
 
 1. Go to Home Assistant’s **Developer Tools -> Services** screen
 2. Select "rest_command.trigger_n8n" from the Service menu
-3. Enter the following in the Service Data field to trigger your n8n trigger device:
-   {"deviceId":"N8N_ID"}
+3. Enter the following in the Service Data field to trigger your n8n workflow:
+   {"bar":"some information"}
 4. Select the CALL SERVICE button
 
-You must replace N8N_ID with the ID of your N8N trigger device found in the Devices manager section of the console.
+You must replace ```some information``` with the some information you want to make use of in your n8n workflow(s).
 
 And that’s it!
 
-You can now start triggering N8N Routines from Home Assistant.
+You can now start triggering n8n workflows from Home Assistant.
 
-More, see https://voicemonkey.io/integrations/home-assistant
+In addition, see https://voicemonkey.io/integrations/home-assistant
