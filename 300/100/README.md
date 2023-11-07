@@ -42,7 +42,7 @@ For ```<version-number>``` choose ```v.1```.
 
 ## 400 - Call the WebHook using your key
 
-If instead of an API, you have configured a WebHook in n8n, send the API key in your WebHook call as a header named ***X-N8N-API-KEY**.
+If instead of an API, you have configured a WebHook in n8n, send the API key in your WebHook call as a header named **X-N8N-API-KEY**.
 
 For example, say you want to get all active workflows. Your curl request will look like this:
 
