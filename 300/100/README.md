@@ -38,5 +38,8 @@ curl -X 'GET' \
   -H 'X-N8N-API-KEY: <your-api-key>'
 ```
 
+For ```<version-number>``` choose ```v.1```.
+
+
 MORE ...
 
