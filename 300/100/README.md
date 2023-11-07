@@ -40,6 +40,26 @@ curl -X 'GET' \
 
 For ```<version-number>``` choose ```v.1```.
 
+You can execute above configuration also in Postman.
+
+In addition, this is how you would send above request in JavaScript:
+
+```
+var myHeaders = new Headers();
+myHeaders.append("X-N8N-API-KEY", "<your-api-key>");
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+fetch("https://wvanheemstra.app.n8n.cloud/api/v.1/workflows?active=true", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
 ## 400 - Call the WebHook using your key
 
 If instead of an API, you have configured a WebHook in n8n, send the API key in your WebHook call as a header named **X-N8N-API-KEY**.
